@@ -1,0 +1,564 @@
+/* ======================================================
+    Diderson Baka Web and Mobile Application Developer  
+    www.diderson.com
+
+    NOTE: This code is intellectual property of
+    Diderson Baka  and may not be
+    reproduced or used without prior permission.
+
+    Copyright 2016 Diderson Baka Web and Mobile Application Developer 
+    ======================================================  */
+/* ==========================================================================
+  Body and layout styles
+========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+@font-face {
+  font-family: 'CalvertMT-Light';
+  src:  url('../fonts/CalvertMT-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src:  url('../fonts/GillSans-Light.ttf') format('truetype');
+}
+
+body {
+  font-family:'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;  
+  padding:0;
+  margin:0;
+  background-color:#fff;
+  background-color:#e9e9e9;
+  color:#686666;
+}
+
+/* ==========================================================================
+  header
+========================================================================== */
+#header{
+  background-color:#fff;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+}
+
+.top-line-red{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  border: 2px solid #e12522;
+  max-height:4px;
+  z-index: 20;
+}
+section .row{
+  padding-left: 30px;
+}
+.navbar-custom {
+  background: #fff;
+  font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: none;
+  border-top: 4px solid #e12522;
+}
+
+.navbar-custom a:focus {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  color: #e12522;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: #e12522;
+}
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px;
+}
+.navbar-custom .navbar-nav li a {
+  color: #717174;
+  padding-bottom: 15px;
+  background-image: url('../img/right-br.png');
+  background-repeat: no-repeat;
+  background-position: right; 
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #e12522;
+  outline: none;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: #e12522;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: #e12522;
+}
+
+.navbar-custom .navbar-nav li a.nav-active {
+  color: #e12522;
+}
+
+.navbar-custom .navbar-nav li.last a {
+  background-image: none;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: #e12522;
+  /*background: #18BC9C;*/
+}
+.navbar-custom .navbar-toggle {
+  color: #717174;
+  font-size: 10px;
+  background: #fff;
+  background-image: none;
+
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #e12522;
+  color: #fff;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 2px;
+    padding-top: 30px;
+}
+
+.navbar-brand>img {
+  padding-bottom: 25px; 
+  margin-top: -40px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #fff;
+}
+#top-enqgroup{
+  padding-left: 22px;
+  z-index: 3;
+}
+
+#top-enqgroup ul{
+  background-color:#e12522; 
+  list-style:none;
+  position:relative;
+  float:left;
+  padding: 0px;
+  color: #fff;
+  width:200px
+
+}
+
+
+#top-enqgroup ul li
+{
+  position:relative;
+  float:left;
+}
+
+#top-enqgroup ul li a
+{
+ width:200px;
+}
+
+#top-enqgroup ul li .updwarrow{
+float:right;
+display: block;
+clear: right;
+} 
+
+#top-enqgroup  ul a
+{
+  display:block;
+  color: #fff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight:700;
+  font-size:11px;
+  line-height:32px;
+  padding:0 15px;
+  font-family:Arial,sans-serif
+}
+
+#top-enqgroup  ul li.current-menu-item
+{
+  background:#ddd
+}
+
+#top-enqgroup  ul li:hover
+{
+  background:#830a02
+}
+
+#top-enqgroup  ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:-10;
+  background:#5d5b5b;
+  padding:0
+}
+
+#top-enqgroup  ul ul li
+{
+  float:none;
+  border-bottom: 1px solid #fff;
+}
+
+#top-enqgroup  ul ul li:hover{
+   background:#a4a2a2;
+}
+
+#top-enqgroup  ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+#top-enqgroup  ul ul ul
+{
+  top:0;
+  left:100%
+}
+
+#top-enqgroup  ul ul i{
+  float: right;
+  font-size: 16px;
+}
+
+#top-enqgroup  ul li:hover > ul
+{
+  display:block
+}
+
+
+
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 0px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+/*
+*Shrink ot rezire menu style
+*/
+
+.shrink{
+   border-top: 4px solid #e12522 !important;
+   max-height:49px;
+   z-index: 6; 
+}
+
+.shrink #navigation{
+  top: -90px;
+  position: relative;
+}
+
+.shrink #equiniti-logo{
+  display: none;
+}
+.shrink #navigation .navbar-collapse{
+  background-color: #fff;
+  background-image: none;
+}
+
+
+/* ==========================================================================
+  Sections
+========================================================================== */
+section {
+    padding:75px 0;
+}
+
+.first-section{
+  margin-top: 90px;
+  padding:80px 0;
+}
+
+#the-group{
+  background-color:#e9e9e9;
+  background:url(../img/header-bg.jpg) repeat-x; 
+  height:620px;
+  overflow: hidden;
+}
+
+
+#together{
+  background-color:#e9e9e9; 
+  background:url(../img/better-bg.png) repeat-x; 
+  height:480px;
+  overflow: hidden;
+}
+
+#together .logo-tog{
+  padding-top: 80px;
+}
+
+#claybrook{
+  background:url(../img/claybrook-bg.png) repeat-x; 
+  height:513px;
+  overflow: hidden;
+}
+
+#paymaster{
+  background:url(../img/paymaster-bg.png) repeat-x; 
+  height:550px;
+  overflow: hidden;
+}
+
+#vote{
+  background:url(../img/vote-bg.png) repeat-x; 
+  height:525px;
+  overflow: hidden;
+}
+
+#bottom{
+  background-color:#e1e1e1;
+  border-top: 2px solid #cdcdcd;
+  overflow: hidden;
+}
+
+#bottom hr{
+  border-color: #b0afaf;
+  margin-top: -3px;
+}
+
+#bottom ul{
+  list-style: none;
+  margin-top: -10px;
+  margin-left: -40px;
+  padding-bottom: 20px;
+}
+
+#bottom ul li{
+  padding-top: 5px;
+}
+
+#bottom ul li a, #footer ul li a{
+  color: #686666;
+  text-decoration:none;
+}
+
+#bottom ul li a:hover, #footer ul li a:hover{
+  text-decoration:underline;
+}
+
+#bottom .social img{
+  float: right;
+  display: block;
+  padding: 10px 5px 40px 5px;
+}
+
+#footer{
+  padding-top: 25px;
+  background-color:#fff;
+  height:80px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+#footer ul{
+  list-style: none;
+  margin-left: -55px;
+}
+
+#footer ul li{
+  float: left;
+  padding: 0px 15px 0px 15px;
+  border-right: 1px solid #b0afaf;
+}
+
+#footer ul li.last{
+  border-right: none;
+}
+
+/* ==========================================================================
+  Typography
+========================================================================== */
+section h1, section h2, section h3, section h4 {
+  font-family: 'GillSans-Light', 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #e12522;
+  /*font-weight: bold;*/
+}
+
+section h1{
+  font-size: 45px;
+}
+
+.strong-red{
+  color: #830a02;
+}
+
+a{
+  color: #e12522;
+  text-decoration: none;
+}
+
+a:hover{
+   color: #830a02;
+  text-decoration: none;
+}
+
+.txt-nred{
+  color: #e12522;
+}
+
+.txt-sred{
+  color: #830a02;
+}
+
+.eqt-btn{
+    background-color: #e12522;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.eqt-btn i{
+  float: right;
+  padding: 3px 5px 0px 20px;
+}
+
+.eqt-btn:hover{
+  background-color: #830a02;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.eqt-btn{
+  margin-top: 25px;
+}
+
+.claycall{
+  padding: 10px 30px;
+  margin: 4px 2px;
+}
+
+/* ==========================================================================
+  Generic styles
+========================================================================== */
+
+.vote-hight img{
+  position: absolute;
+  margin-left: -30px;
+  float: left;
+  padding: 0px 5px 20px 0px;
+}
+
+.vote-hight span{
+  position: absolute;
+  margin-top: 20px;
+  padding: 0px 5px 20px 70px;
+}
+
+.vote-hight a{
+  color: #830a02;
+  text-decoration: none;
+}
+
+.vote-hight a:hover{
+  color: #e12522;
+}
+
+.eqtsection p{
+  padding-top: 25px;
+}
+
+.eqtsection a{
+  padding-left: 15px;
+  text-decoration: underline;
+}
+
+.text-right img{
+  padding-left: 20px;
+}
+
+/* ==========================================================================
+  voting
+========================================================================== */
+
+#vote-box{
+  padding: 25px 50px;
+  z-index: 0;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 10px 25px;
+  border-radius: 50%;
+  border: 2px solid #9f9f9f;
+  background-color: #d9d9d9;
+  float: left;
+  cursor: pointer;
+  z-index: 15;
+}
+
+.square:hover{
+  border-color: #e12522;
+}
+
+.bar-bg{
+  margin: 0px 0px 10px 75px;
+  border-bottom: 2px solid #d9d9d9;
+  position: relative;
+}
+
+.box-cnt{
+  position: relative;
+  padding: 10px 0px 20px 0px;
+  z-index: 1000;
+}
+
+.box-cnt img{
+  position: absolute;
+  left:15px;
+  top: 7px;
+  z-index: 5000;
+}
+
+.bar-vote{
+  position: absolute;
+  left: 0px;
+  top:20px;
+  width:0%;
+  border-bottom: 2px solid #e12522;
+  background:#e12522;
+  transition: width 1s;
+}
+
+#loading-vote{
+  position: absolute;
+  padding: 150px 80px 80px 80px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+

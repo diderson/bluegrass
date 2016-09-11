@@ -1,0 +1,196 @@
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .navbar-custom .navbar-nav li a {
+    background-image:none; 
+  }
+
+  .navbar-brand>img {
+    width: 70%;
+  }
+
+   #top-enqgroup  ul a
+  {
+    display:block;
+    color: #fff;
+    font-weight:400;
+    font-size:10px;
+    line-height:32px;
+    padding:0 15px;
+    font-family:Arial,sans-serif;
+  }
+
+  #the-group{
+    background-color:#e9e9e9;
+    background:url(../img/header-bg.jpg); 
+    height:100%;
+    overflow: hidden;
+  }
+
+  #the-group img{
+    width: 30%;
+  }
+
+  #together{
+    background-color:#e9e9e9; 
+    background:url(../img/better-bg.png); 
+    height:100%;
+    overflow: hidden;
+  }
+
+  #together .logo-tog{
+    padding-top: 80px;
+  }
+
+  #together .logo-tog{
+    padding-top: 80px;
+    width: 50%;
+  }
+
+  #claybrook{
+  background:url(../img/claybrook-bg.png); 
+  height:100%;
+  overflow: hidden;
+  }
+
+  #paymaster{
+  background:url(../img/vote-bg.png); 
+  height:100%;
+  overflow: hidden;
+}
+
+#vote{
+  background:url(../img/vote-bg.png); 
+  height:100%;
+  overflow: hidden;
+}
+
+
+ 
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+  .navbar-custom .navbar-nav li a {
+    background-image:none; 
+  }
+
+    #the-group{
+      background-color:#e9e9e9;
+      background:url(../img/header-bg.jpg) repeat-x; 
+      height:100%;
+      overflow: hidden;
+    }
+
+    .vote-hight img{
+      width: 20%;
+    } 
+
+     #the-group{
+      background-color:#e9e9e9;
+      background:url(../img/header-bg.jpg); 
+      height:100%;
+      overflow: hidden;
+    }
+
+    /*#the-group img{
+      width: 30%;
+    }*/
+
+    #together{
+      background-color:#e9e9e9; 
+      background:url(../img/better-bg.png); 
+      height:100%;
+      overflow: hidden;
+    }
+
+    #together .logo-tog{
+      padding-top: 80px;
+    }
+
+    #together .logo-tog{
+      padding-top: 80px;
+      width: 50%;
+    }
+
+    #claybrook{
+    background:url(../img/claybrook-bg.png); 
+    height:100%;
+    overflow: hidden;
+    }
+
+    #paymaster{
+    background:url(../img/vote-bg.png); 
+    height:100%;
+    overflow: hidden;
+  }
+
+  #vote{
+    background:url(../img/vote-bg.png); 
+    height:100%;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+  body {
+  font-size: 12px;
+  line-height: 20px;  
+  }
+
+  #top-enqgroup{
+     padding-left: 5px;
+  }
+
+  .navbar-custom .navbar-nav li a {
+    font-size: 10px; 
+  } 
+
+  #top-enqgroup  ul a
+  {
+    display:block;
+    color: #fff;
+    font-weight:400;
+    font-size:10px;
+    line-height:32px;
+    padding:0 15px;
+    font-family:Arial,sans-serif;
+  }
+
+  .shrink #navigation{
+    top: -90px;
+    position: relative;
+  }
+
+  .shrink #equiniti-logo{
+    display: none;
+  }
+  .shrink #navigation .navbar-collapse{
+    background-color: #fff;
+    background-image: none;
+  }
+
+  #paymaster{
+   background-image: none; 
+    height:100%;
+    overflow: hidden;
+  }
+
+
+  #vote{
+    /*background:url(../img/vote-bg.png);*/
+    background-image: none; 
+    background-color: #e1e1e1;
+    height:100%;
+    overflow: hidden;
+  }
+
+  #footer{
+    padding-top: 25px;
+    background-color:#fff;
+    height:80px;
+    font-size: 8px;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){ 
+}
